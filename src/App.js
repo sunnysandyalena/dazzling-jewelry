@@ -17,7 +17,7 @@ function App() {
     <nav>
       <Link to='/Contact' className='link'>CONTACT</Link>
       <Link to='/Shop' className='link'>SHOP</Link>
-      <Link to='/'><img src={logo} alt = 'Dazzling Logo' width = '60px'/></Link>
+      <Link to='/'><img className="logo-img" src={logo} alt = 'Dazzling Logo'/></Link>
       <Link to='/Favorites' className='link'>FAVORITES</Link>
       <Link to='/Cart' className='link'>CART</Link>
     </nav>

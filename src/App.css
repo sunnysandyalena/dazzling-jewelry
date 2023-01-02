@@ -1,3 +1,6 @@
+body {
+  margin: 0;
+}
 .container-main {
   display: flex;
   flex-wrap: wrap;
@@ -38,9 +41,7 @@ body {
 .back {
   background-color: transparent; 
   color: rgb(35, 29, 44);
-  padding: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  padding: 10px;
   font-family: 'Castoro', serif;
 }
 
@@ -58,7 +59,7 @@ h2, h3, h4 {
 }
 .banner {
   position: relative;
-  
+  margin: 0;
 }
 .banner-img {
   width: 100%;
@@ -105,7 +106,8 @@ nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 15px;
+  margin: 0;
+  padding: 10px;
   background-color: rgb(35, 29, 44);
 }
 .link {
@@ -114,6 +116,9 @@ nav {
   font-family: 'Castoro', serif;
   font-weight: bolder;
   color:rgb(250, 225, 218);
+}
+.logo-img {
+  width: 60px;
 }
 .contact {
   display: flex;
@@ -183,7 +188,7 @@ li {
     top: 20%;
   }
   .slide-img {
-    width: 300px;
+    width: 350px;
   }
   h2 {
     font-size: 15px;
@@ -202,6 +207,8 @@ li {
   }
   .link {
     font-size: 15px;
+    padding: 0 0;
+    margin: 4px;
   }
   .contact-element {
     font-size: 20px;
@@ -211,5 +218,8 @@ li {
   }
   .shop-img {
     width: 30px;
+  }
+  .logo-img {
+    width: 40px;
   }
 }
