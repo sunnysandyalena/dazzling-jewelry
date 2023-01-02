@@ -176,6 +176,9 @@ li {
   color: rgb(28, 21, 37 );
   font-size: 30px;
 }
+.footer-icon {
+  width: 40px;
+}
 
 @media all and (max-width: 800px) {
 
@@ -187,7 +190,7 @@ li {
     top: 20%;
   }
   .slide-img {
-    width: 350px;
+    width: 300px;
   }
   h2 {
     font-size: 15px;
@@ -220,5 +223,8 @@ li {
   }
   .logo-img {
     width: 40px;
+  }
+  .footer-icon {
+    width: 20px;
   }
 }

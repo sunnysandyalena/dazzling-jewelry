@@ -6,11 +6,11 @@ import instagram from './instagram.png';
 function Footer() {
     return (
         <div className='container-footer'>
-            <div><img src = {home} alt = 'Home Page' width = '40px'/></div>
+            <div><img className='footer-icon' src = {home} alt = 'Home Page'/></div>
             <div className='container-icons'>
-                <div><img src = {email} alt = 'Email' width = '40px'/></div>
-                <div><img src = {phone} alt = 'Phone' width = '40px'/></div>
-                <div><img src = {instagram} alt = 'Instagram' width = '40px'/></div>
+                <div><img className='footer-icon' src = {email} alt = 'Email'/></div>
+                <div><img className='footer-icon' src = {phone} alt = 'Phone'/></div>
+                <div><img className='footer-icon' src = {instagram} alt = 'Instagram'/></div>
             </div>
         </div>
     )
