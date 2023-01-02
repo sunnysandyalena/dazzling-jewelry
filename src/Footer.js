@@ -1,4 +1,3 @@
-import './App.css';
 import home from './home.png';
 import email from './email.png';
 import phone from './phone.png';

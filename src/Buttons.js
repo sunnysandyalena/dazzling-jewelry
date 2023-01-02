@@ -1,5 +1,7 @@
 import './App.css';
 
+import './App.css';
+
 function Buttons ({filters}) {
     return (
         <div className="container">

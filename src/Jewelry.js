@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import './App.css';
 import favorite from './favorite.png';
 import cart from './cart.png';
 

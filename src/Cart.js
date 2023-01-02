@@ -1,3 +1,5 @@
+import './App.css';
+
 function Cart() {
     return (
         <div className="container">

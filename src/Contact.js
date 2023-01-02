@@ -1,5 +1,4 @@
 import Free from './Free';
-import './App.css';
 import email from './email.png';
 import phone from './phone.png';
 import instagram from './instagram.png';

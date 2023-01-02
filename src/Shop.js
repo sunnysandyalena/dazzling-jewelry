@@ -1,9 +1,8 @@
-import Free from './Free';
-import Footer from './Footer';
-import './App.css';
-import Buttons from './Buttons';
 import { useState } from 'react';
 import { dataProducts } from './dataProducts';
+import Free from './Free';
+import Footer from './Footer';
+import Buttons from './Buttons';
 import Jewelry from './Jewelry';
 
 function Shop() {

@@ -1,12 +1,11 @@
 import { useState } from 'react';
 import { dataSlides } from './dataSlides';
-import './App.css';
 import next from './right.png';
 import back from './left.png';
 
 function Slides() {
     const [slide, setSlide] = useState(0);
-    const {slideImg, slideName} = dataSlides [slide];
+    const {slideImg, slideName} = dataSlides[slide];
 
     const previousSlide = () => {
         setSlide((slide => {
