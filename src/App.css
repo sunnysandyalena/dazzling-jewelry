@@ -103,7 +103,7 @@ button {
 }
 nav {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
   padding: 10px;
@@ -117,7 +117,15 @@ nav {
   color:rgb(250, 225, 218);
 }
 .logo-img {
-  width: 60px;
+  width: 30px;
+}
+.logo {
+  font-family: 'Allura', cursive;
+  font-size: 30px;
+  color:rgb(250, 225, 218)
+}
+.navIcon {
+  width: 35px;
 }
 .contact {
   display: flex;
@@ -153,7 +161,7 @@ li {
 }
 .container-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px;
 }
 .container-icons {
