@@ -1,7 +1,8 @@
+import './App.css';
 function Account () {
     return (
-        <div>
-
+        <div className="container">
+            <h2>CREATE AN ACCOUNT</h2>
         </div>
     )
 }

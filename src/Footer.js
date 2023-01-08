@@ -5,9 +5,9 @@ import instagram from './instagram.png';
 function Footer() {
     return (
         <div className='container-footer'>
-            <div><img className='footer-icon' src = {email} alt = 'Email'/></div>
-            <div><img className='footer-icon' src = {phone} alt = 'Phone'/></div>
-            <div><img className='footer-icon' src = {instagram} alt = 'Instagram'/></div>
+            <div className='footer-element'><img className='footer-icon' src = {email} alt = 'Email'/></div>
+            <div className='footer-element'><img className='footer-icon' src = {phone} alt = 'Phone'/></div>
+            <div className='footer-element'><img className='footer-icon' src = {instagram} alt = 'Instagram'/></div>
         </div>
     )
 }

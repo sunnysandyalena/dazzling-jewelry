@@ -22,16 +22,34 @@ import accountImg from './account.png';
 function App() {
   return <Router>
     <nav>
-      <div>
-        <Link to='/' className="link"><span className="logo">Dazzling</span><span><img className="logo-img" src={logo} alt = 'Dazzling Logo'/></span><span className="logo">Jewelry</span></Link>
+      <div className="links">
+        <Link to='/' className="link link-logo"><span className="logo">Dazzling</span><span><img className="logo-img" src={logo} alt = 'Dazzling Logo'/></span><span className="logo">Jewelry</span></Link>
       </div>
-      <div>
-        <Link to='/' className="link"><img className="navIcon" src = {homeImg} alt = 'Home Page'/></Link>
-        <Link to='/Contact' className='link'><img className="navIcon" src = {contactImg} alt = 'Contact'/></Link>
-        <Link to='/Shop' className='link'><img className="navIcon" src = {shopImg} alt = 'Shop'/></Link>
-        <Link to='/Favorites' className='link'><img className="navIcon" src = {favImg} alt = 'Favorites'/></Link>
-        <Link to='/Cart' className='link'><img className="navIcon" src = {cartImg} alt = 'Cart'/></Link>
-        <Link to='/Account' className="link"><img className="navIcon" src = {accountImg} alt = 'Account'/></Link>
+      <div className="links">
+          <Link to='/' className="link link-icon">
+              <img className="nav-icon" src = {homeImg} alt = 'Home Page'/>
+              <p className="text-icon">HOME</p>
+          </Link>
+          <Link to='/Contact' className='link link-icon'>
+              <img className="nav-icon" src = {contactImg} alt = 'Contact'/>
+              <p className="text-icon">CONTACT</p>
+          </Link>
+          <Link to='/Shop' className='link link-icon'>
+              <img className="nav-icon" src = {shopImg} alt = 'Shop'/>
+              <p className="text-icon">SHOP</p>
+          </Link>
+          <Link to='/Favorites' className='link link-icon'>
+              <img className="nav-icon" src = {favImg} alt = 'Favorites'/>
+              <p className="text-icon">FAVORITES</p>
+          </Link>
+          <Link to='/Cart' className='link link-icon'>
+              <img className="nav-icon" src = {cartImg} alt = 'Cart'/>
+              <p className="text-icon">CART</p>
+          </Link>
+          <Link to='/Account' className="link link-icon">
+              <img className="nav-icon" src = {accountImg} alt = 'Account'/>
+              <p className="text-icon">ACCOUNT</p>
+          </Link>
       </div>
     </nav>
     <Routes>
@@ -40,7 +58,7 @@ function App() {
       <Route path='/' element={<Home/>}/>
       <Route path='/Favorites' element={<Favorites/>}/>
       <Route path='/Cart' element={<Cart/>}/>
-      <Route path='./Account' element={<Account/>}/>
+      <Route path='/Account' element={<Account/>}/>
     </Routes>
   </Router>
 }
