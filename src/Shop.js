@@ -6,12 +6,17 @@ import Buttons from './Buttons';
 import ButtonsTwo from './ButtonsTwo';
 import ButtonsThree from './ButtonsThree';
 import Jewelry from './Jewelry';
+import AllButton from './AllButton';
 
 function Shop() {
     const [products, setProducts] = useState (dataProducts);
 
-    const newJewelry = (searchTerm) => { 
-        const filtered = dataProducts.filter (item => item.searchTerm === searchTerm);
+    const allJewelry = (jewelry) => { 
+        const filtered = dataProducts.filter (item => item.jewelry === jewelry);
+        setProducts(filtered);
+    }
+    const newJewelry = (type) => { 
+        const filtered = dataProducts.filter (item => item.type === type);
         setProducts(filtered);
     }
     const stoneJewelry = (stone) => { 
@@ -26,6 +31,9 @@ function Shop() {
         <div>
             <div>
                 <Free/>
+            </div>
+            <div>
+                <AllButton filters={allJewelry}/>
             </div>
             <div>
                 <Buttons filters={newJewelry}/>
