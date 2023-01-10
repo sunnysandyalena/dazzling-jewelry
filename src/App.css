@@ -210,7 +210,24 @@ li {
 }
 
 @media all and (max-width: 800px) {
-
+  .link {
+    font-size: 25px;
+    padding: 0 0;
+    margin: 4px;
+  }
+  nav {
+    justify-content: center;
+  }
+  .nav-icon {
+    width: 30px;
+  }
+  .banner-message {
+    font-size: 20px;
+    top: 20%;
+  }
+  .slide-img {
+    width: 400px;
+  }
 }
 
 @media all and (max-width: 500px) {
