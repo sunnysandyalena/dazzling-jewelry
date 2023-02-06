@@ -4,12 +4,7 @@ import {
   Route, 
   Link 
 } from "react-router-dom";
-import Contact from './Contact';
-import Shop from './Shop';
-import Home from './Home';
-import Favorites from './Favorites';
-import Cart from './Cart';
-import Account from "./Account";
+
 import './App.css'; 
 import logo from './dazzling.png';
 import contactImg from './contact-info-pink-icon.png';
@@ -18,6 +13,12 @@ import favImg from './loves-pink-icon.png';
 import cartImg from './cart-pink-icon.png';
 import homeImg from './home-icon.png';
 import accountImg from './account.png';
+import Contact from "./Components/Contact";
+import Shop from "./Components/Shop";
+import Favorite from "./Components/Favorites/Favorite";
+import Cart from "./Components/Cart/Cart";
+import Account from "./Components/Account/Account";
+import Home from "./Components/Home";
 
 function App() {
   return <Router>
@@ -38,9 +39,9 @@ function App() {
               <img className="nav-icon" src = {shopImg} alt = 'Shop'/>
               <p className="text-icon">SHOP</p>
           </Link>
-          <Link to='/Favorites' className='link link-icon'>
+          <Link to='/Favorite' className='link link-icon'>
               <img className="nav-icon" src = {favImg} alt = 'Favorites'/>
-              <p className="text-icon">FAVORITES</p>
+              <p className="text-icon">FAVORITE</p>
           </Link>
           <Link to='/Cart' className='link link-icon'>
               <img className="nav-icon" src = {cartImg} alt = 'Cart'/>
@@ -56,7 +57,7 @@ function App() {
       <Route path='/Contact' element={<Contact/>}/>
       <Route path='/Shop' element={<Shop/>}/>
       <Route path='/' element={<Home/>}/>
-      <Route path='/Favorites' element={<Favorites/>}/>
+      <Route path='/Favorite' element={<Favorite/>}/>
       <Route path='/Cart' element={<Cart/>}/>
       <Route path='/Account' element={<Account/>}/>
     </Routes>

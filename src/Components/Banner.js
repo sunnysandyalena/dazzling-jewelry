@@ -1,4 +1,3 @@
-import './App.css';
 import bannerImg from './banner.png';
 
 function Banner() {

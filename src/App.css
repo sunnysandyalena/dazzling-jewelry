@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  background-color: rgb(250, 225, 218);
 }
 .container-main {
   display: flex;
@@ -10,16 +11,16 @@ body {
   display: flex;
   flex-wrap: wrap;
 }
-.jewelry-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .product-card {
   padding: 2%;
   flex-grow: 1;
   flex-basis: 16%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Castoro', serif;
+}
+.container-jewelry {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,14 +29,32 @@ body {
   display: flex;
   justify-items: space-around;
 }
-
-body {
-  background-color: rgb(250, 225, 218);
+.container-selector {
+  background-color: transparent;
+  color: rgb(28, 21, 37);
+  padding: 10px;
+  margin-left: 5px;
+  border: 2px solid rgb(28, 21, 37);
+  font-family: 'Castoro', serif;
+  font-size: 20px;
+}
+.container-selector:hover {
+  font-weight: bold;
+}
+.selected-type {
+  background-color: rgb(28, 21, 37);
+  color: rgb(250, 225, 218);
+  padding: 10px;
+  margin-left: 5px;
+  border: 2px solid rgb(28, 21, 37);
+  font-family: 'Castoro', serif;
+  font-size: 20px;
 }
 .container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  font-family: 'Castoro', serif;
 }
 .back {
   background-color: transparent; 
@@ -106,7 +125,6 @@ nav {
   justify-content: space-between;
   flex-wrap: wrap;
   margin: 0;
-  padding: 5px;
   background-color: rgb(35, 29, 44);
 }
 .links {
@@ -190,9 +208,30 @@ li {
 }
 .container-contacts {
   display: flex;
+  flex-wrap: wrap;
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+}
+.container-cart {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.container-loading {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+}
+.cart-items {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
 }
 .contact-element {
   display: flex;
@@ -207,6 +246,15 @@ li {
 .footer-element {
   margin-left: 5px;
   margin-right: 5px;
+}
+.log-btn {
+  background-color: transparent;
+  color: rgb(28, 21, 37);
+  padding: 10px;
+  border: 2px solid rgb(28, 21, 37);
+  font-family: 'Castoro', serif;
+  font-size: 18px;
+  font-weight: bolder;
 }
 
 @media all and (max-width: 800px) {
